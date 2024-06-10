@@ -514,6 +514,10 @@ gensrcs {
 cc_defaults {
     name: "libchrome-defaults",
 
+    lto: {
+        never: true,
+    },
+
     cflags: [
         "-Wall",
         "-Werror",
